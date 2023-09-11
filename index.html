@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="end">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Aptauja</title>
+
+    <script>
+       function izvaditVarduUzvardu() {
+    var vards = document.getElementById("vards").value;
+    var uzvards = document.getElementById("uzvards").value;
+
+    var pilnsVardsUzvards = vards + " " + uzvards;
+
+    document.getElementById("izvade").innerHTML = pilnsVardsUzvards;
+}
+
+    </script>
+
+</head>
+<body>
+    <div class="main">
+        <div class="box">
+        <form>
+        <label for="vards">Ievadiet vārdu:</label>
+        <input type="text" id="vards">
+        <br>
+        <label for="uzvards">Ievadiet uzvārdu:</label>
+        <input type="text" id="uzvards">
+        <br>
+        <button type="button" onclick="izvaditVarduUzvardu()">Atminēt</button>
+    </form>
+
+    <p>Atminētais vārds un uzvārds: <span id="izvade"></span></p>
+        </div>
+    </div>
+</body>
