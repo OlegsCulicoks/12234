@@ -22,3 +22,9 @@ justify-content: center;
 background-color: white;
 border-radius: 25px; 
 }
+
+button{
+    background-color: greenyellow;
+    padding: 7px;
+    
+}
